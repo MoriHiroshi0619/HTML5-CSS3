@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+body{
+    background-image: linear-gradient(to right, #B4FABE, #90c998, #5fd270dd);
+    font: normal 1em arial;
+}
+
+h1{
+    color: #337A3E;
+}
+
+h1#principal{
+    background-image: linear-gradient(to right, rgb(123, 6, 239), rgba(218, 25, 25, 0.925));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+
+}
+
+h2{
+    color: #48AD57;
+}
+
+.basico{
+    color: #48AD57;
+
+}
+
+.intermed{
+    color: #afa847;
+
+}
+
+.avanc{
+     color: #ad7a48;
+}
+
+.destaque{
+    background-color: rgba(255, 255, 0, 0.381);
+    border-radius: 15px;
+    width: 50%;
+}

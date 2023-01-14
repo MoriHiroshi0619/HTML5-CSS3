@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="H.ico" type="image/x-icon">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinamica</h1>
+    <p>teste abrir esse site em vários dispositivos 
+        diferentes ou simplesmente aumente o tamanho
+        do seu navegador</p>
+    <picture> <!--primeiro carregue uma imagem padrao (ou a maior ou menor de todas) depois coloque os source na ordem tamanho-->
+        <source media="(max-width: 750px)" srcset="imagens/imagem_P.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagem_M.png" type="image/png">
+        <img src="imagens/imagem_G.png" alt="imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo Audio</h1>
+    <p>vamos aprender a reproduzir áudio em HTML5.</p>
+    
+    <audio id="meme-cara-fortao" preload="metadata" controls loop>
+        <source src="midias/giga-chad-By-Tuna.mp3" type="audio/mpeg">
+        <source src="midias/giga-chad-By-Tuna.wav" type="audio/wav">
+        <source src="midias/giga-chad-By-Tuna.ogg" type="audio/ogg">
+        <!-- ira reproduzir um por um até achar o formato compativel-->
+    </audio> 
+    <label for="meme-cara-fortao">meme do cara fortão</label>
+
+    <audio id="dano-emotion" src="midias/emotional-damage-By-Tuna.mp3" preload="metadata" controls loop></audio>
+    <label for="dano-emotion">emotional damage</label>
+    <audio id="pornhub" src="midias/pornhub-intro-By-Tuna.mp3" preload="metadata" controls loop></audio>
+    <label for="pornhub">pornhub intro</label>
+    <!-- MP3 WAV OGG-->
+
+    <h1>Inserindo Videos Hospedados localmente</h1>
+
+    <p>esse video está hospedado no meu proprio servidor</p>
+
+    <video preload="metadata" poster="imagens/paisagem650.jpg" width="460" controls>
+        <source src="videos/video.mp4" type="video/mp4">
+        <source src="videos/video.webm" type="video/webm">
+        <source src="videos/file.mp4" type="video/mp4">
+        <p>seu navegador não tem compatibilidade com reproduções de videos</p>
+    </video>
+
+    <h1>inserindo videos do youtupe</h1>
+    <h2>hospedagem externa</h2>
+
+    <iframe width="460" height="315"
+    src="https://www.youtube.com/embed/uoiEPP0k9pM"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+    
+ 
+</body>
+</html>

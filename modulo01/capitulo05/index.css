@@ -1,0 +1,14 @@
+h1{
+    font: normal 15pt arial;
+}
+
+img#foto{
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
+}
+
+img#html-logo{
+    margin: 100px;
+}

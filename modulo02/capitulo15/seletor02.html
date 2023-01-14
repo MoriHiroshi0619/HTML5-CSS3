@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../H.ico" type="image/x-icon">
+    <title>Pseudo-classes</title>
+    <style>
+        body{
+            font:normal 1em arial;
+        }
+
+        .dives{
+            display: inline-block;
+            border-radius: 10px;
+            border: 1px solid black;
+            text-align: center;
+            background-color: aquamarine;
+            height: 200px;
+            width: 200px;
+        }
+
+        /*pseudo classes representamos por um simbolo de :*/
+        /*pseudo classes está relacionado á um estado de algum elemento*/
+        .dives:hover{ /*algo acontece quando o mouse passar por cima*/
+            background-color: rgba(137, 43, 226, 0.518);
+        }
+
+        div#d1 > p { /* > significa que ira selecionar tudo que for FILHO de um determinado elemento para alterar*/
+            display: none;
+        }
+
+        div#d1:hover > p {
+            display: block;
+            color: black;
+        }
+
+        div#d1:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="dives"><p>0001</p></div>
+    <div class="dives"><p>0002</p></div>
+    <div class="dives"><p>0003</p></div>
+
+    <h2>Exemplo de hover</h2>
+    <p>passe o mouse sobre o texto abaixo</p>
+    <div id="d1">
+        passe o mouse aqui
+        <p>texto escondido</p>
+    </div>
+
+    <p>fim do Exemplo</p>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
