@@ -13,42 +13,69 @@
             padding: 0px;
         }
         body{
-            background-image: linear-gradient(to right, rgb(239, 156, 251), rgb(252, 67, 209));
             height: 100vh;
             font-family: 'Dancing Script', cursive;
-            display: grid;
-            place-items: center;
+            background-image: linear-gradient(to right, rgb(255, 56, 255), rgb(254, 192, 255));
+        }   
+        main{
+            position: absolute;
+            height: 80%;
+            width: 90%;
+
+            background-image: url('imagens/coracao.png');
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
         }
         div{
-            width: 100vw;
-            height: 70vh;
-            background-image: url('imagens/coracao.png');
-            background-size: 100vw 70vh;
-            background-repeat: no-repeat;
+
+            height: 50%;
+            width: 40%;
+            min-width: 300px;
+            max-width: 500px;   
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
         div > h1 {
-            height: 100%;
-            display: grid;
-            place-items: center;
+            display: block;
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -70%);
+            padding: 20px;
             text-align: center;
-            width: 40%;
-            margin: auto;
-            text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.538);
+            font-size: 170%;
+            text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.625);
         }
+        footer{
+            position: absolute;
+            height: 2%;
+            width: 100%;
+            top: 90%;
+        }
+
         footer > p{
             text-align: center;
             font-size: 1.2em;
         }
+
     </style>
 </head>
 <body>
     <main>
         <div>
-            <h1>TE AMO MEU AMOR, <br> Te amar foi a melhor coisa que eu poderia ter feito na vida. <br> Caroline Gois Santos.</h1>
+            <h1>TE AMO MEU AMOR, <br> Te amar foi a melhor coisa que eu poderia ter feito na vida. <br> <strong>Caroline Gois Santos</strong>.</h1>
         </div>
-        <footer>
-            <p>att, <strong>Mori Hiroshi</strong></p>
-        </footer>
     </main>
+    <footer>
+        <p>att, hiroshi</p>
+    </footer>
 </body>
 </html>
